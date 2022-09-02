@@ -41,7 +41,7 @@ app.get('/formulario', (req, res) => {
 
 app.get('/trabajos', (req, res) => {
 
-    let sql = 'SELECT * FROM l4urqgyfmmtjdc8q.contacto';
+    let sql = 'SELECT * FROM wqbtbtchruqgswy5.formulario';
     conexion.query(sql,(err, result) => {
         if (err) throw err;
     res.render('trabajos', {
@@ -72,7 +72,7 @@ app.post('/formulario', (req, res) => {
             mensaje: mensaje
         };
 
-        let sql = 'INSERT INTO l4urqgyfmmtjdc8q.contacto SET ?';
+        let sql = 'INSERT INTO wqbtbtchruqgswy5.formulario SET ?';
 
         conexion.query(sql, datos, (err, result) => {
             let envioDatos = 'Datos Enviados Con Éxito'
