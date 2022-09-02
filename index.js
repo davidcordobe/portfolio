@@ -16,7 +16,6 @@ const conexion = mysql.createConnection({
     database: process.env.DATABASE
 });
 
-
 //Configurar Middelwares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
